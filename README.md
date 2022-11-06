@@ -4,3 +4,6 @@ Massive Open Online Courses (MOOC) scenarios.
 
 ## Dataset used
 Dataset for Affective States in Environments (DAiSEE): The dataset contains four affective states: bored, frustrated, confused, and engaged. The engagement level ranges from 0 to 4 (Whitehill et al. (2014)), with 0 being very low, 1 being low, 2 being high, and 3 being very high.
+
+## Results
+![Results at default frame rate]("C:\Users\ashva\Desktop\Engagement Recognition\DAiSEE-20220628T221115Z-001\DAiSEE\Results\Results (Default Frame Rate).jpeg")
