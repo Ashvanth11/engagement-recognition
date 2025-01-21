@@ -49,3 +49,78 @@ matplotlib
 
 
 ## Usage
+### Step 1: Extract Frames
+
+Run the get_frames.py script to extract frames from the DAiSEE videos:
+
+python get_frames.py
+
+Frames are stored in the Frames directory, organized into subdirectories for training, testing, validation, and final testing.
+
+### Step 2: Save File Paths and Labels
+
+Generate numpy arrays for frame file paths and labels using:
+
+python save_filepath_label.py
+
+The generated files are saved in the npoutput directory.
+
+### Step 3: Train the Model
+
+Train the CNN model using model.py:
+
+python model.py
+
+The model architecture is defined in the get_model function, and the trained model is saved in the modelpath directory.
+
+### Step 4: Evaluate the Model
+
+Evaluate the trained model on the test dataset using evaluate.py:
+
+python evaluate.py
+
+Evaluation results are saved in the Results directory.
+
+## Scripts Explanation
+
+### 1. get_frames.py
+
+Extracts frames from videos at default or specified frame rates using ffmpeg.
+
+Handles subdirectories: Train, Test, Validation, and FinalTest.
+
+### 2. save_filepath_label.py
+
+Maps extracted frames to corresponding labels.
+
+Saves frame file paths and labels as numpy arrays for use in the input pipeline.
+
+### 3. get_dataset.py
+
+Creates TensorFlow datasets for training and testing.
+
+Preprocesses images: resizing, normalization, and batching.
+
+##$ 4. model.py
+
+Defines a custom CNN model for multi-label classification.
+
+Trains the model using the training dataset.
+
+Saves the trained model.
+
+### 5. evaluate.py
+
+Loads the trained model and evaluates it on the test dataset.
+
+Outputs accuracy and saves results to numpy files.
+
+## Results
+
+Evaluation results, including accuracy for each class, are stored in the Results directory.
+
+## Acknowledgments
+
+DAiSEE dataset creators
+
+TensorFlow/Keras documentation
