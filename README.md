@@ -31,3 +31,21 @@ Separate scripts for testing models on different datasets.
 
 Evaluates and saves accuracy for each engagement state
 
+## Setup Instructions
+### Prerequisites
+Python 3.8+
+
+TensorFlow
+
+Keras
+
+NumPy
+
+pandas
+
+ffmpeg (for frame extraction)
+
+matplotlib
+
+
+## Usage
