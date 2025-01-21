@@ -51,9 +51,7 @@ matplotlib
 ## Usage
 ### Step 1: Extract Frames
 
-Run the get_frames.py script to extract frames from the DAiSEE videos:
-
-python get_frames.py
+Run the get_frames.py script to extract frames from the DAiSEE videos.
 
 Frames are stored in the Frames directory, organized into subdirectories for training, testing, validation, and final testing.
 
@@ -67,17 +65,13 @@ The generated files are saved in the npoutput directory.
 
 ### Step 3: Train the Model
 
-Train the CNN model using model.py:
-
-python model.py
+Train the CNN model using model.py.
 
 The model architecture is defined in the get_model function, and the trained model is saved in the modelpath directory.
 
 ### Step 4: Evaluate the Model
 
-Evaluate the trained model on the test dataset using evaluate.py:
-
-python evaluate.py
+Evaluate the trained model on the test dataset using evaluate.py.
 
 Evaluation results are saved in the Results directory.
 
@@ -101,7 +95,7 @@ Creates TensorFlow datasets for training and testing.
 
 Preprocesses images: resizing, normalization, and batching.
 
-##$ 4. model.py
+## 4. model.py
 
 Defines a custom CNN model for multi-label classification.
 
